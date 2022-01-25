@@ -1,13 +1,16 @@
 "use strict";
 
-function burger() {
+const burger = document.getElementById('burger');
+const div = document.getElementById('navi_close');
+
+const toggle = () => {
     document.getElementById('nav').classList.toggle('in');
 }
 
-document.getElementById('burger').addEventListener('click' , function () {
-    burger();
+burger.addEventListener('click' , () => {
+    toggle();
 });
 
-document.getElementById('navi_close').addEventListener('click' , function () {
-    burger();
+div.addEventListener('click' , () => {
+    toggle();
 });
